@@ -1,0 +1,96 @@
+html{
+    height:100%;
+}
+
+body{
+    margin: 0%;
+    text-align: center;
+
+    /*height:100%;*/
+    background-color: #5060BA;
+    /*font-family: "Noto Sans JP", sans-serif;*/
+    font-family: "游ゴシック", "Yu Gothic", "游ゴシック体", YuGothic, sans-serif;
+}
+
+.screen{
+    margin:0px;
+    height:100%;
+    /*background-color: #FF9EA9;/*確認用*/
+}
+
+
+/**ヘッダー**/
+header{
+    text-align: left;
+    padding-left:30px;
+    /*background-color: #BFEEE5;/*確認用*/
+}
+#h_img_logo{
+    vertical-align: middle;
+    margin: 0px;
+    width:15%;
+}
+#h_classname{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0px;
+    color:#FFF;
+    font-size:13px;
+    font-weight:bold;
+}
+
+
+
+/**メインビジュアル**/
+
+#main_visual{
+    clear: both;
+    text-align: center;
+    /*background-color: #FF9EA9;/*確認用*/
+}
+
+#mv_img_logo{
+    width:95%;
+}
+
+
+.mv_sent_pink{
+    margin:0px;
+    margin-top:2.5%;
+    margin-bottom:1%;
+    color:#FF9EA9;
+    font-size:2.2vw;
+    font-weight:bold;
+}
+.text_underline{
+    border-bottom:2px solid;
+}
+
+.mv_sent_r{
+    vertical-align: middle;
+    margin:0px;
+    color:#FFF;
+    font-size:1.3vw;
+    font-weight:medium;
+}
+
+.mv_sent_b{
+    margin:0px;
+    margin-top:0.5%;
+    margin-bottom:2%;
+    color:#FFF;
+    font-size:1.5vw;
+    font-weight:bold;
+}
+
+.mv_sent_enph{
+    margin:0px;
+    font-size:1.5vw;
+    font-weight:medium;
+}
+
+.mv_sent_img_logo{
+    vertical-align: middle;
+    margin:0px;
+    width:10%;
+}

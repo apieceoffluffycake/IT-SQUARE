@@ -1,0 +1,576 @@
+/**タブコンテンツ**/
+#tab_contents{
+    text-align: center;
+    height:100%;
+
+    /*background-color: #BFEEE5;/*確認用*/
+}
+
+/***タブ部分***/
+#tc_tabs{
+    text-align: center;
+    list-style-type: none;
+    margin:0 auto;
+    padding:0px;
+    width:60%;
+}
+
+#tc_tab_l{
+    float: left;
+    margin-right:0.25%;
+    width:49.5%;
+    height:100%;
+}
+#tc_tab_r{
+    float: left;
+    margin-left:0.25%;
+    width:49.5%;
+    height:100%;
+}
+
+@media screen and (max-width: 750px) {
+    #tc_tabs{
+        text-align: center;
+        list-style-type: none;
+        margin:0 auto;
+        padding:0px;
+        width:90%;
+    }
+}
+
+#tc_tabs li a{
+    display: block;
+    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+    padding-top:13px;
+
+    width:100%;
+    height:40px;
+    color:#FFF;
+    background:#C6D2FF;
+    font-size:16px;
+	font-weight:bold;
+    text-decoration:none;
+}
+
+#tc_tabs li a:hover{
+    background:rgb(160, 175, 228);
+}
+
+#tc_tabs li a.current{
+	background:#E3E9FF;
+	color:#122A88;
+}
+
+
+
+
+/***コンテンツ部分***/
+
+/*サイトのしくみ*/
+#site_describe{
+    clear: both;
+    text-align: center;
+    padding-top:20px;
+    padding-bottom:20px;
+    background-color:#E3E9FF;
+}
+/*白く囲む部分*/
+#tc_c_sd_white{
+    text-align: center;
+    margin:0 auto;
+    padding:20px;
+    width:70%;
+    border-radius: 15px;
+    background-color: #FFF;
+}
+
+.tc_c_title{
+    margin:0px;
+    color:#122A88;
+    font-size:30px;
+    font-weight:bold;
+}
+
+#tc_c_sd_img{
+    margin:0px;
+    width:100%;
+}
+
+#tc_c_sd_white ul{
+    text-align: center;
+    margin:0px auto;
+    padding:0px;
+    width:90%;
+}
+#tc_c_sd_white ul li{
+    display: inline-block;
+    border-radius: 5px;
+    padding:1% 0;
+    width:19%;
+    color:#FFF;
+    background-color: #BFEEE5;
+    font-size:1.3vw;
+    font-weight:bold;
+    list-style-type: none;
+}
+#tc_c_sd_white p{
+    color:#4E4E4E;
+}
+
+@media screen and (max-width: 750px) {
+    #tc_c_sd_white ul{
+        text-align: center;
+        margin:0px auto;
+        padding:0px;
+        width:100%;
+    }
+    #tc_c_sd_white ul li{
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 5px;
+        padding:1% 0;
+        width:15%;
+        color:#FFF;
+        background-color: #BFEEE5;
+        font-size:1.3vw;
+        font-weight:bold;
+        list-style-type: none;
+    }
+    #tc_c_sd_white p{
+        color:#4E4E4E;
+    }
+}
+
+
+
+/*サイトの背景*/
+#site_background{
+    clear: both;
+    text-align: center;
+    padding-top:20px;
+    padding-bottom:20px;
+    color:#4E4E4E;
+    background-color:#E3E9FF;
+}
+
+.tc_c_sb_title{
+    margin:0px;
+    margin-top:20px;
+    font-size:30px;
+    font-weight:bold;
+}
+
+.text_highlighter_green{
+    background:linear-gradient(transparent 50%, #BFEEE5 0%);
+}
+.text_highlighter_lightgreen{
+    background:linear-gradient(transparent 50%, rgba(191, 238, 229, 0.5) 0%);
+}
+
+
+
+#sb_1{
+    text-align: center;
+    margin:0 auto;
+    margin-top:30px;
+    padding-top:30px;
+    width:65%;
+    /*background-color: antiquewhite;/*確認用*/
+}
+
+#sb_1_left{
+    text-align: center;
+    width:100%;
+    /*float: left;
+    text-align: left;
+    width:60%;*/
+    /*background-color: deepskyblue;/*確認用*/
+}
+#sb_1_right{
+    display:none;
+    float: left;
+    width:40%;
+    /*background-color: pink;/*確認用*/
+}
+
+@media screen and (max-width: 750px) {
+    #site_describe{
+        clear: both;
+        text-align: center;
+        padding-top:20px;
+        padding-bottom:20px;
+        background-color:#E3E9FF;
+    }
+    /*白く囲む部分*/
+    #tc_c_sd_white{
+        margin:0 auto;
+        padding:20px;
+        width:80%;
+        border-radius: 15px;
+        background-color: #FFF;
+    }
+    .tc_c_title{
+        margin:0px;
+        color:#122A88;
+        font-size:20px;
+        font-weight:bold;
+    }
+    .tc_c_sb_title{
+        margin:0px;
+        margin-top:20px;
+        font-size:20px;
+        font-weight:bold;
+    }
+
+    #sb_1{
+        text-align: center;
+        margin:0 auto;
+        padding-top:10px;
+        width:90%;
+        /*background-color: antiquewhite;/*確認用*/
+    }
+    #sb_1_left{
+        text-align: center;
+        width:100%;
+        /*background-color: deepskyblue;/*確認用*/
+    }
+    #sb_1_right{
+        width:100%;
+        /*background-color: pink;/*確認用*/
+    }
+}
+
+.tc_c_sent_r{
+    font-size:1vw;
+    font-weight:bold;
+}
+/*文字大きく太く*/
+.tc_c_sent_b{
+    vertical-align: middle;
+    font-size:1.3vw;
+    font-weight:bold;
+}
+/*文字もっと大きく太く*/
+.tc_c_sent_b_2{
+    vertical-align: middle;
+    font-size:1.5vw;
+    font-weight:bold;
+}
+/*文字ピンク(太字)に*/
+.tc_c_sent_pink{
+    color:#FF9EA9;
+    /*font-size:1vw;*/
+    font-weight:bold;
+}
+/*文字緑(太字)に*/
+.tc_c_sent_green{
+    color:#51D7BC;
+    font-weight:bold;
+}
+/*マージンをなくす(emph_と使う用)*/
+.tc_c_sent_b_emph{
+    margin-top:0px;
+    margin-bottom: 0px;
+    font-size:1.3vw;
+    font-weight:bold;
+}
+/*文字白、背景ピンクに*/
+.tc_c_sent_b_emph_2{
+    margin:0px;
+    color:#FFF;
+    background-color: #FFC9CF;
+    
+}
+/*bをもっと大きく*/
+.tc_c_sent_big{
+    font-size:1.5vw;
+}
+
+#sb_1_img{
+    width:150px;
+}
+
+
+
+
+#sb_2{
+    clear: both;
+    text-align: center;
+    margin:0 auto;
+    padding-top:30px;
+    width:65%;
+    /*background-color: antiquewhite;/*確認用*/
+}
+
+#sb_2_left{
+    float:left;
+    vertical-align: middle;
+    width:60%;
+    /*background-color: deepskyblue;/*確認用*/
+}
+
+#sb_2_right{
+    float:left;
+    vertical-align: middle;
+    text-align: left;
+    margin-top:5%;
+    padding-left:3%;
+    width:37%;
+    /*background-color: pink;/*確認用*/
+}
+
+
+
+.graph_2{
+    text-align: center;
+    margin:0 auto;
+    padding:3% 5%;
+    background-color: #FFF;
+}
+
+.graph_2_group{
+    clear: both;
+    text-align: center;
+    background-color:#FFF;
+}
+/*円グラフ*/
+.self_assess_IT{
+    float: left;
+    margin: 0px;
+    width:33%;
+}
+
+.graph_title_2{
+    margin:0;
+    color:#4e4e4e;
+    font-size:12px;
+    font-weight: bold;
+}
+
+.graph_source_2{
+    clear: both;
+    margin:0;
+    color:#4e4e4e;
+    font-size:10px;
+}
+
+@media screen and (max-width: 750px) {
+    #sb_2{
+        text-align: center;
+        margin:0 auto;
+        padding-top:10px;
+        width:90%;
+        /*background-color: antiquewhite;/*確認用*/
+    }
+    #sb_2_left{
+        text-align: center;
+        width:100%;
+        /*background-color: deepskyblue;/*確認用*/
+    }
+    #sb_2_right{
+        text-align: center;
+        width:100%;
+        /*background-color: pink;/*確認用*/
+    }
+    .graph_title_2{
+        margin:0;
+        color:#4e4e4e;
+        font-size:10px;
+        font-weight: bold;
+    }
+}
+
+
+
+
+
+
+#sb_3{
+    clear: both;
+    text-align: center;
+    margin:0 auto;
+    padding-top:30px;
+    width:65%;
+    /*background-color: antiquewhite;/*確認用*/
+}
+
+#sb_3_left{
+    float: left;
+    text-align: left;
+    /*padding-left:5%;*/
+    width:50%;
+    /*background-color: deepskyblue;/*確認用*/
+}
+
+#sb_3_right{
+    float: left;
+    width:50%;
+    /*background-color: pink;/*確認用*/
+}
+
+#sb_3_right_mobile{
+    display: none;
+}
+
+
+@media screen and (max-width: 750px) {
+    #sb_3{
+        text-align: center;
+        margin:0 auto;
+        padding-top:0px;
+        width:90%;
+        /*background-color: antiquewhite;/*確認用*/
+    }
+    #sb_3_left{
+        text-align: center;
+        width:100%;
+        /*background-color: deepskyblue;/*確認用*/
+    }
+    #sb_3_right{
+        display: none;
+    }
+    #sb_3_right_mobile{
+        display: block;
+        text-align: center;
+        margin-top:20px;
+        width:100%;
+        /*background-color: pink;/*確認用*/
+    }
+}
+
+
+
+.graph_3{
+    padding:3% 5%;
+    background-color: #FFF;
+}
+
+.graph_x_label_3{
+    margin:0;
+    color:#4e4e4e;
+    font-size:2px;
+}
+
+.graph_x_label_img{
+    margin:0px;
+    width:100%;
+}
+
+.graph_source_3{
+    margin:0;
+    color:#4e4e4e;
+    font-size:10px;
+}
+
+
+
+
+#sb_4{
+    clear: both;
+    text-align: center;
+    margin:0 auto;
+    padding-top:30px;/*margin-topかpadding-topかどっちかにする*/
+    width:65%;
+    /*background-color: antiquewhite;/*確認用*/
+}
+
+.tc_c_sent_img_logo{
+    vertical-align: middle;
+    width:20%;
+}
+/*サイトの特徴*/
+#sb_4_features{
+    margin:0 auto;
+    padding-top:2%;
+    padding-bottom:2%;
+    width:100%;
+    background-color: rgba(255, 255, 255, 0.527);
+}
+#sb_4_mobile{
+    display: none;
+}
+
+
+.mobile_hide{
+    display: none;
+}
+
+@media screen and (max-width: 750px) {
+    #sb_4{
+        display: none;
+    }
+    #sb_4_mobile{
+        display: block;
+        text-align: center;
+        margin:0 auto;
+        padding-top:30px;
+        width:90%;
+        /*background-color: antiquewhite;/*確認用*/
+    }
+    #sb_4_features_mobile{
+        text-align: center;
+        margin:0 auto;
+        padding-top:2%;
+        padding-bottom:2%;
+        width:100%;
+        background-color: rgba(255, 255, 255, 0.527);
+    }
+    #features_mobile{
+        text-align: left;
+        margin:0 auto;
+        width:80%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .tc_c_sent_r{
+        font-size:14px;
+        font-weight:bold;
+    }
+    /*文字大きく太く*/
+    .tc_c_sent_b{
+        vertical-align: middle;
+        font-size:16px;
+        font-weight:bold;
+    }
+    /*文字もっと大きく太く*/
+    .tc_c_sent_b_2{
+        vertical-align: middle;
+        font-size:20px;
+        font-weight:bold;
+    }
+    /*文字ピンク(太字)に*/
+    .tc_c_sent_pink{
+        color:#FF9EA9;
+        /*font-size:1vw;*/
+        font-weight:bold;
+    }
+    /*文字緑(太字)に*/
+    .tc_c_sent_green{
+        color:#51D7BC;
+        font-weight:bold;
+    }
+    /*マージンをなくす(emph_と使う用)*/
+    .tc_c_sent_b_emph{
+        margin-top:0px;
+        margin-bottom: 0px;
+        font-size:20px;
+        font-weight:bold;
+    }
+    /*文字白、背景ピンクに*/
+    .tc_c_sent_b_emph_2{
+        margin:0px;
+        color:#FFF;
+        background-color: #FFC9CF;
+        
+    }
+    /*bをもっと大きく*/
+    .tc_c_sent_big{
+        font-size:18px;
+    }
+
+    .mobile_hide{
+        display: inline;
+    }
+}

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+<link rel="stylesheet" href="css/index1.css">
+<link rel="stylesheet" href="css/index2.css">
+<link rel="stylesheet" href="css/index3.css">
+<link rel="stylesheet" href="css/index4.css">
+
+
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+
+<!--Webフォントの読み込み-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;700;900&family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+
+<title>やさしいITのクイズサイト「IT SQUARE」</title> 
+
+</head>
+<body>
+
+    <div class="screen">
+        <header><!--ロゴと授業名-->
+            <img id="h_img_logo" src="img/logo1_white.png">
+            <p id="h_classname">情報連携実習Ⅲ</p>
+        </header>
+
+        <div id="main_visual">
+            <picture>
+            <source srcset="img/top_img_mobile.png" media="(max-width: 750px)">
+            <img id="mv_img_logo" src="img/top_img.png">
+            </picture>
+            <p class="mv_sent_pink"><span class="text_underline">&ensp;IT SQUAREは、ITを学ぶ全ての人の&nbsp;広場&nbsp;=&nbsp;Square&nbsp;です。</span></p>
+            <p class="mv_sent_r">情報社会の今、多くの人にとってITは避けては通れません。</p>
+            <p class="mv_sent_r">だけど、<span class="mv_sent_enph">「ITってとっつきづらい…。」</span>そう感じてる人だって多いはず。</p>
+            <p class="mv_sent_b"><img class="mv_sent_img_logo" src="img/logo1_white.png">はみんなが楽しく効率的に学べるクイズサイトです。</p>
+        </div><!--main_visual-->
+    </div><!--screen-->
+
+
+    <div class="screen">
+
+        <div id="tab_contents">
+            <!--タブ-->
+            <ul id="tc_tabs">
+                <li id="tc_tab_r"><a href="#site_background" class="current">サイトの背景</a></li>
+                <li id="tc_tab_l"><a href="#site_describe">サイトのしくみ</a></li>
+            </ul><!--tc_tabs-->
+
+            <div id="tc_content">
+
+                <!--!!!サイトのしくみ!!!-->
+                <section id="site_describe">
+                    <div id="tc_c_sd_white">
+                        <p class="tc_c_title"><span class="text_underline">&ensp;IT SQUAREのしくみ&ensp;</span></p>
+                        <img id="tc_c_sd_img" src="img/site_describe_img.png">
+
+                        <ul>
+                            <li>Word</li>
+                            <li>Excel</li>
+                            <li>Power Point</li>
+                            <li>IT知識</li>
+                            <li>ITスキル</li>
+                        </ul>
+                        <p class="tc_c_sent_b">カテゴリごとの正答率で<span class="mobile_hide"><br></span>自分の弱点がわかる！</p>
+                        
+                    </div><!--sd_white-->
+                </section><!--site_describe-->
+
+                <!--!!!サイトの背景!!!-->
+                <section id="site_background">
+                        <p class="tc_c_sb_title"><span class="text_highlighter_green">&ensp;日本はIT浸透が遅れている？&ensp;</span></p>
+                        
+                        <div id="sb_1">
+                            <div id="sb_1_left">
+                                <p class="tc_c_sent_b">2020年5月、新型コロナウイルスの緊急経済対策として
+                                        支給が始まった10万円の特別定額給付金。</p>
+                                <p class="tc_c_sent_b">一部の自治体では新しいシステムと既存のデータが繋がっておらず、<span class="mobile_none"><br></span>
+                                        オンラインでの申請なのに、印刷して情報を確認というような<span class="mobile_none"><br></span>
+                                        アナログな作業をせざるを得ない事態になってしまいました。</p>
+                                <p class="tc_c_sent_b_2">なぜこんなことになってしまったのでしょう？</p>
+                            </div><!--sb_1_left-->
+                            <div id="sb_1_right">
+                                <img id="sb_1_img" src="#">
+                            </div><!--sb_1_right-->
+                        </div><!--sb_1-->
+
+
+                        <div id="sb_2">
+
+                            <div id="sb_2_left">
+                                <div class="graph_2">
+                                <p class="graph_title_2">業務用途のデジタル・テクノロジのスキルに関する自己評価(2018)</p>
+                                        
+                                    <div class="graph_2_group">
+                                        <div class="self_assess_IT"><canvas id="self_assess_IT_jp" width="500" height="500"></canvas></div>
+                                        <div class="self_assess_IT"><canvas id="self_assess_IT_sg" width="500" height="500"></canvas></div>
+                                        <div class="self_assess_IT"><canvas id="self_assess_IT_au" width="500" height="500"></canvas></div>
+                                    </div><!--graph_2_group-->
+                                        
+                                    <div class="graph_2_group">
+                                        <div class="self_assess_IT"><canvas id="self_assess_IT_us" width="500" height="500"></canvas></div>
+                                        <div class="self_assess_IT"><canvas id="self_assess_IT_gb" width="500" height="500"></canvas></div>
+                                        <div class="self_assess_IT"><canvas id="self_assess_IT_de" width="500" height="500"></canvas></div>
+                                    </div><!--graph_2_group-->
+                                            
+                                <p class="graph_source_2">出典：ガートナー(2018年1月)</p>
+                                </div><!--graph_2-->
+                            </div><!--sb_2_left-->
+
+                            <div id="sb_2_right">
+                                <p class="tc_c_sent_r">業務上のITスキルに対する<br>自己評価の調査があります。</p>
+                                <p class="tc_c_sent_r">日本人は回答者の50％以上が<span class="mobile_none"><br></span>
+                                        自身のスキルを<br><span class="tc_c_sent_pink">「素人」</span>や<span class="tc_c_sent_pink">「中程度」</span>と評価しました。</p>
+                                <p class="tc_c_sent_b">これは他の国に比べて<br>
+                                        ITに自信を持てず苦手意識を抱く人、<br>
+                                        敬遠する人が多いということなのです。</p>
+                            </div><!--sb_2_right-->
+
+                        </div><!--sb_2-->
+
+
+                        <div id="sb_3">
+                            <div id="sb_3_right_mobile">
+                                <div class="graph_3">
+                                <canvas id="edu_IT_mobile" width="400" height="200"></canvas>
+                                <!--<p class="graph_x_label_3">日米英韓星丁瑞</p>-->
+                                <img class="graph_x_label_img" src="img/flags.png">
+                                <p class="graph_source_3">出典：NTTデータ「ICT関連動向の国際比較及び<br>国内外のICT利活用先進事例調査」</p>
+                                </div><!--sb_3_graph-->
+                            </div><!--sb_3_right_mobile-->
+
+                            <div id="sb_3_left">
+                                <p class="tc_c_sent_r">学校での教育にも目を向けてみます。<br>
+                                        世界的にみても日本は<span class="mobile_hide"><br></span><span class="tc_c_sent_pink">教育分野でのIT利用率</span>が低いようです。</p>
+                                <p class="tc_c_sent_r">また情報活用能力調査(2013)によると<br>
+                                        現在の小中学生は、デジタルデバイスを<br>
+                                        実際に操作するスキルが低い傾向にあります。</p>
+                                <p class="tc_c_sent_b_emph"><span class="tc_c_sent_b_emph_2">学生時代の不十分なIT教育が</span></p>
+                                <p class="tc_c_sent_b_emph"><span class="tc_c_sent_b_emph_2">たくさんのITが苦手な社会人を</span></p>
+                                <p class="tc_c_sent_b_emph"><span class="tc_c_sent_b_emph_2">生み出しているのかもしれません。</span></p>
+                            </div><!--sb_3_left-->
+
+                            <div id="sb_3_right">
+                                <div class="graph_3">
+                                <canvas id="edu_IT" width="400" height="200"></canvas>
+                                <!--<p class="graph_x_label_3">日米英韓星丁瑞</p>-->
+                                <img class="graph_x_label_img" src="img/flags.png">
+
+                                <p class="graph_source_3">出典：NTTデータ「ICT関連動向の国際比較及び<br>国内外のICT利活用先進事例調査」</p>
+                                </div><!--sb_3_graph-->
+                            </div><!--sb_3_right-->
+                        </div><!--sb_3-->
+
+
+                        <div id="sb_4">
+                            <p class="tc_c_sent_b">今やITは、<span class="tc_c_sent_green"><span class="tc_c_sent_big">「プロがやるもの」</span></span>から<span class="tc_c_sent_green"><span class="tc_c_sent_big">「みんなで担っていくもの」</span></span>に変化しました。</p>
+                            <p class="tc_c_sent_b">パソコンに触れる機会のない学生や&nbsp;&nbsp;ITを苦手になってしまった人たちが、<br>もっと気軽に学べる場所があったなら･･･</p>
+                            <p class="tc_c_sent_b_2">そこで生まれたのが<img class="tc_c_sent_img_logo" src="img/logo1_blue.png">です。</p>
+
+                            <div id="sb_4_features">
+                            <p class="tc_c_sent_b">◇&nbsp;場所や時間にとらわれない効率的な学習&nbsp;&nbsp;&ensp;&ensp;&ensp;&ensp;&ensp;</p>
+                            <p class="tc_c_sent_b">◇&nbsp;初歩的な内容、知っておくと便利な知識が中心</p>
+                            <p class="tc_c_sent_b">◇&nbsp;ユーザーの評価によって厳選されたクイズ&nbsp;&ensp;&ensp;&ensp;&ensp;</p>
+                            </div><!--sb_4_features-->
+
+                            <p class="tc_c_sent_b_2">誰でも、幅広く楽しく学べるウェブサイトを目指しています！</p>
+                        </div><!--sb_4-->
+
+                        <div id="sb_4_mobile">
+                                <div class="ps_s_cont_blank2">BLANK</div><!--ps_s_cont_blank2-->
+                                <p class="tc_c_sent_b">今やITは<span class="tc_c_sent_green"><span class="tc_c_sent_big">「プロがやるもの」</span></span>から<br>
+                                    <span class="tc_c_sent_green"><span class="tc_c_sent_big">「みんなで担っていくもの」</span></span>に<br>変化しました。</p>
+                                <p class="tc_c_sent_b">パソコンに触れる機会のない学生や<br>
+                                    ITを苦手になってしまった人たちが、<br>もっと気軽に学べる場所があったなら･･･</p>
+                                <p class="tc_c_sent_b_2">そこで生まれたのが<img class="tc_c_sent_img_logo" src="img/logo1_blue.png">です。</p>
+    
+                                <div id="sb_4_features_mobile">
+                                    <div id="features_mobile">
+                                    <p class="tc_c_sent_r">◇&nbsp;場所や時間にとらわれない<br>&nbsp;&nbsp;&nbsp;&nbsp;効率的な学習</p>
+                                    <p class="tc_c_sent_r">◇&nbsp;初歩的な内容、<br>&nbsp;&nbsp;&nbsp;&nbsp;知っておくと便利な知識が中心</p>
+                                    <p class="tc_c_sent_r">◇&nbsp;ユーザーの評価によって<br>&nbsp;&nbsp;&nbsp;&nbsp;厳選されたクイズ</p>
+                                    </div><!--features_mobile-->
+                                </div><!--sb_4_features-->
+    
+                                <p class="tc_c_sent_b_2">誰でも、幅広く楽しく学べる<span class="mobile_hide"><br></span>ウェブサイトを目指しています！</p>
+                        </div><!--sb_4_mobile-->
+
+                </section><!--site_describe-->
+            </div><!--contents-->
+        </div><!--tab_contents-->   
+    </div><!--screen-->
+
+
+    <div class="screen">
+        <!--現在の進捗-->
+        <div class="progress_status">
+            <p class="ps_title"><span class="tc_c_sent_b_2"><span class="text_underline">&ensp;現在の進捗&ensp;</span></span></p>
+
+            <!--サーベイ(個人、チーム)-->
+            <div class="ps_section">
+                <img class="ps_s_title_checkbox"  src="img/checkbox-on.png">
+                <div class="ps_s_title_sents">
+                    <p class="ps_s_title_date">2020.4-2020.9</p>
+                    <p class="ps_s_title_cont">サーベイ<span class="mobile_none">(個人、チーム)</span></p>
+                </div><!--ps_s_title_sents-->
+            </div><!--ps_section-->
+
+            <div class="ps_s_contents">
+                <div class="ps_s_cont_blank1">BLANK</div><!--ps_s_cont_blank1-->
+                <div class="ps_hidebox">
+                    <label for="ps_h_show-btn">＋詳しく見る</label>
+                    <input type="checkbox" id="ps_h_show-btn">
+                    <p class="content">個人サーベイでメンバー全員が<span class="mobile_none"><br></span>
+                        SDGs 4番<span class="tc_c_sent_pink">「質の高い教育をみんなに」</span>について調べていたので、<span class="mobile_none"><br></span>
+                            チームとしての目標も教育関連になりました。<br>
+                            より身近なテーマをということで<span class="mobile_none"><br></span>
+                            <span class="tc_c_sent_pink">日本のIT事情の現状を改善するための提案</span>をすることに決まりました。</p>
+                </div><!--ps_hidebox-->
+                <div class="ps_s_cont_blank2">BLANK</div><!--ps_s_cont_blank2-->
+            </div><!--ps_s_contents-->
+
+
+            <!--中間発表-->
+            <div class="ps_section">
+                <img class="ps_s_title_checkbox"  src="img/checkbox-on.png">
+                <div class="ps_s_title_sents">
+                    <p class="ps_s_title_date">2020.9</p>
+                    <p class="ps_s_title_cont">中間発表</p>
+                </div><!--ps_s_title_sents-->
+            </div><!--ps_section-->
+    
+            <div class="ps_s_contents">
+                <div class="ps_s_cont_blank1">BLANK</div><!--ps_s_cont_blank1-->
+                <div class="ps_hidebox">
+                    <label for="ps_h_show-btn2">＋詳しく見る</label>
+                    <input type="checkbox" id="ps_h_show-btn2">
+                    <p class="content">サイトの詳細(機能など)を決めながら、<span class="mobile_none"><br></span>
+                            提案の根拠を強めるためのさらなる調査と不合理な点の修正を行いました。<br>
+                            またサイトのワイヤーフレームやデザインガイドラインの作成も進めました。</p>
+                </div><!--ps_hidebox-->
+                <div class="ps_s_cont_blank2">BLANK</div><!--ps_s_cont_blank2-->
+            </div><!--ps_s_contents-->
+
+
+            <!--サイト作成-->
+            <div class="ps_section">
+                <img class="ps_s_title_checkbox"  src="img/checkbox-no.png">
+                <div class="ps_s_title_sents">
+                    <p class="ps_s_title_date">2020.10-</p>
+                    <p class="ps_s_title_cont">サイト作成</p>
+                </div><!--ps_s_title_sents-->
+            </div><!--ps_section-->
+
+            <div class="ps_s_contents">
+                <div class="ps_s_cont_blank1">BLANK</div><!--ps_s_cont_blank1-->
+                <div class="ps_hidebox">
+                    <p class="content_now"><span class="tc_c_sent_b"><span class="tc_c_sent_green"><span class="text_highlighter_lightgreen">現在、所属コースごとに<span class="mobile_hide"><br></span>分担しながら<span class="mobile_hide"><br></span>作業を進めています。</span></span></span><br>
+                        &ensp;<span class="mobile_none">・</span>エンジニアリング：システム構築<span class="mobile_none">(クイズゲームなど)</span><br>
+                        &ensp;<span class="mobile_none">・</span>デザイン：デザイン<span class="mobile_none">(コーディング、アイコン作成など)</span></p>
+                </div><!--ps_hidebox-->
+                <div class="ps_s_cont_blank2">BLANK</div><!--ps_s_cont_blank2-->
+            </div><!--ps_s_contents-->
+
+            <div id="ps_create_site_progress">
+                <div id="ps_csp_cont">
+
+                    <p class="tc_c_sent_b">サイト作成の進捗<span class="mobile_none">(完成したページ)</span></p>
+                    
+                    <!--フィルタリング ボタン-->
+                    <div id="page_btns">
+                        <button value="toppage">トップ<span class="mobile_hide"><br></span>ページ</button>
+                        <button value="loginpage">ログイン<span class="mobile_hide"><br></span>ページ</button>
+                        <button value="quizpage">クイズ<span class="mobile_hide"><br></span>ページ</button>
+                        <button value="resultpage">振り返り<span class="mobile_hide"><br></span>ページ</button>
+                        <p>クリックで詳細を確認できます。</p>
+                    </div><!--page_btns-->
+
+                    
+
+                    <ul id="page_des">
+
+                        <li class="toppage">
+                            <div class="page_des_title">
+                            <span class="pdt_pagename">トップページ</span>
+                            <p class="tc_c_sent_r">カテゴリごとにクイズを解けます。<span class="mobile_hide"><br></span>下部のクイズ一覧から直接選んで解くことも可能です。</p>
+                            </div><!--page_des_title-->
+                            <img class="page_des_img" src="img/page_top.png">
+                        </li>
+
+                        <li class="loginpage">
+                                <div class="page_des_title">
+                                <span class="pdt_pagename">ログインページ</span>
+                                <p class="tc_c_sent_r">ログインすることでサイトを利用できます。ユーザー名とパスワードの登録ができます。</p>
+                                </div><!--page_des_title-->
+                                <img class="page_des_img" src="img/page_create.png">
+                                <img class="page_des_img" src="img/page_login.png">
+                        </li>
+
+                        <li class="quizpage">
+                                <div class="page_des_title">
+                                <span class="pdt_pagename">クイズページ</span>
+                                <p class="tc_c_sent_r">ランダムで出題される選択式のクイズに回答すると答えが表示されます。</p>
+                                </div><!--page_des_title-->
+                                <img class="page_des_img" src="img/page_quiz.png">
+                                <img class="page_des_img" src="img/page_quiz_result.png">
+                        </li>
+
+                        <li class="resultpage">
+                                <div class="page_des_title">
+                                <span class="pdt_pagename">振り返りページ</span>
+                                <p class="tc_c_sent_r">クイズを10問解き終わると正答率とすべての解答が見られます。</p>
+                                </div><!--page_des_title-->
+                                <img class="page_des_img" src="img/page_result.png">
+                        </li>
+
+                    </ul>
+                </div><!--ps_csp_cont-->
+            </div><!--ps_create_site_progress-->
+            <div class="ps_s_cont_blank2">BLANK</div><!--ps_s_cont_blank2-->
+        </div><!--progress_status-->
+    </div><!--screen-->
+
+    <div class="screen">
+        <!--チームメンバー-->
+        <div class="progress_status">
+            <p class="ps_title"><span class="tc_c_sent_b_2"><span class="text_underline">&ensp;今後の活動計画&ensp;</span></span></p>
+            
+            <div id="plan_timeline">
+                <div class="pt_section">
+                <ul>
+                <li><div class="pt_date">2020.12</div><!--pt_date--></li>
+                <li><p class="pt_title">サイトを完成させる</p><!--pt_title-->
+                    <p class="tc_c_sent_r">◇マイページの正答率表示<br>
+                        ◇トップページのクイズソート機能<br>
+                        ◇いいねボタンの実装</p></li>
+                </ul>
+                </div><!--pt_section-->
+
+                <div class="pt_section">
+                        <ul>
+                        <li><div class="pt_date">2020.01</div><!--pt_date--></li>
+                        <li><p class="pt_title"><span class="mobile_none">INIAD生に</span>テストプレイ<span class="mobile_none">をしてもらう</span></p><!--pt_title-->
+                            <p class="tc_c_sent_r">◇フィードバックをもとに最終調整</p>
+                            <p class="pt_title">最終発表の準備</p></li>
+                        </ul>
+                        </div><!--pt_section-->
+
+            </div><!--plan_timeline-->
+            <div class="ps_s_cont_blank3">BLANK</div><!--ps_s_cont_blank2-->
+        </div><!--progress_status-->
+    </div><!--screen-->
+
+
+    
+
+
+    <!--Chart.jsの読み込み-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+    <!--slider proの読み込み(jQuery)-->
+    <script type="text/javascript" src="js/jquery.sliderPro.min.js"></script>
+  
+    <script src="js/index.js"></script>
+    <script src="js/index2.js"></script>
+    <script src="js/index3.js"></script>
+
+</body>
+</html>

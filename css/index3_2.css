@@ -1,0 +1,170 @@
+.aaa{
+    clear: both;
+}
+
+#progress_status{
+    text-align: center;
+    margin:20px auto;
+    padding-top:15px;
+    border-radius: 10px;
+    width:65%;
+    color: #4E4E4E;
+    background-color:#FFF;
+}
+
+/**題名部分**/
+.ps_section{
+    clear: both;
+    text-align: left;
+    margin:0 auto;
+    margin-bottom:5%;
+    width:80%;
+    background-color:#Faa;/*確認用*/
+}
+
+/*チェックボックス*/
+.ps_s_title_checkbox{
+    float:left;
+    margin-right:20px;
+    width:50px;
+}
+/*日付とタイトル*/
+.ps_s_title_sents{
+    float:left;
+}
+.ps_s_title_date{
+    margin:0;
+    padding:0px;
+    font-size:1vw;
+    font-weight: medium;
+    /*background-color: #Faa;/*確認用*/
+}
+.ps_s_title_cont{
+    margin:0;
+    font-size:1.4vw;
+    font-weight: bold;
+    /*background-color: #Faa;/*確認用*/
+}
+
+
+
+/**表示・非表示切り替え部分**/
+.ps_s_contents{
+    clear: both;
+    text-align: left;
+    margin:0 auto;
+    width:80%;
+    /*background-color:#aFa;/*確認用*/
+}
+
+
+.ps_s_cont_blank1{
+    float:left;
+    width:70px;/*アイコン50px + margin-right50px*/
+    color:#FFF;
+    opacity: 0;
+}
+
+.ps_s_cont_blank2{
+    clear: both;
+    height:20px;
+    color:#FFF;
+    opacity: 0;
+}
+
+
+
+.ps_hidebox{
+    float:left;
+}
+
+
+/*「＋詳しく見る」*/
+/*.ps_hidebox label{
+    color: #5060BA;
+    font-size:1.2vw;
+    font-weight: bold;
+}*/
+.ps_hidebox label{
+    padding:3px 6px;
+    color:#FFF;
+    background-color: #5060BA;
+    border-radius:5px;
+    font-size:1.2vw;
+    font-weight: bold;
+}
+.ps_hidebox label:hover{
+    background-color: rgb(61, 78, 172);
+}
+.ps_hidebox input {
+    display: none; /* チェックボックス非表示 */
+}
+
+
+.content {
+    display:none;
+    font-size:1.1vw;
+    font-weight: bold; /* 文字の太さ */
+    overflow: hidden;
+    opacity: 0;        /* 文字を非表示 */
+    transition: 2s;  /* 文字が表示・非表示される時のスピード */
+}
+
+.ps_hidebox input:checked ~ .content {
+    display:block;
+    height: auto;
+    opacity: 1; /* 文字を表示 */
+}
+
+
+.content_now {
+    font-size:1.1vw;
+    font-weight: bold;
+}
+
+
+/*サイト作成の進捗*/
+#ps_create_site_progress{
+    text-align: center;
+    margin: 0 auto;
+    padding-top:15px;
+    width:80%;
+    background-color: #E3E9FF;
+}
+#ps_csp_cont{
+    text-align: left;
+    margin:0 auto;
+    width:90%;
+}
+
+.csp_section{
+    clear: both;
+}
+
+.pagenames{
+    clear: both;
+}
+.pagename{
+    float: left;
+    text-align: center;
+    margin-right:5px;
+    padding:5px 0px;
+    width:200px;
+    color:#FFF;
+    background-color: #5060BA;
+    font-size:1.2vw;
+    font-weight:bold;
+}
+
+.page_des{
+    clear: both;
+}
+
+.site_imgs{
+    clear: both;
+}
+.site_img{
+    float: left;
+    margin-right:0.5%;
+    width:32.5%;
+}

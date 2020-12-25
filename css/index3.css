@@ -1,0 +1,301 @@
+.aaa{
+    clear: both;
+}
+
+.progress_status{
+    text-align: center;
+    margin:20px auto;
+    padding-top:15px;
+    border-radius: 10px;
+    width:65%;
+    color: #4E4E4E;
+    background-color:#FFF;
+}
+
+
+/**題名部分**/
+.ps_section{
+    clear: both;
+    text-align: left;
+    margin:0 auto;
+    margin-bottom:5%;
+    width:80%;
+    /*background-color:#Faa;/*確認用*/
+}
+
+/*チェックボックス*/
+.ps_s_title_checkbox{
+    float:left;
+    margin-right:20px;
+    width:50px;
+}
+/*日付とタイトル*/
+.ps_s_title_sents{
+    float:left;
+}
+.ps_s_title_date{
+    margin:0;
+    padding:0px;
+    font-size:1vw;
+    font-weight: medium;
+    /*background-color: #Faa;/*確認用*/
+}
+.ps_s_title_cont{
+    margin:0;
+    font-size:1.4vw;
+    font-weight: bold;
+    /*background-color: #Faa;/*確認用*/
+}
+
+
+
+/**表示・非表示切り替え部分**/
+.ps_s_contents{
+    clear: both;
+    text-align: left;
+    margin:0 auto;
+    width:80%;
+    /*background-color:#aFa;/*確認用*/
+}
+
+
+.ps_s_cont_blank1{
+    float:left;
+    /*width:70px;/*アイコン50px + margin-right50px*/
+    width:10%;
+    color:#FFF;
+    opacity: 0;
+}
+
+.ps_s_cont_blank2{
+    clear: both;
+    height:20px;
+    color:#FFF;
+    opacity: 0;
+}
+.ps_s_cont_blank3{
+    clear: both;
+    height:10px;
+    color:#FFF;
+    opacity: 0;
+}
+
+
+
+.ps_hidebox{
+    float:left;
+    width:80%;
+}
+
+
+
+/*「＋詳しく見る」*/
+.ps_hidebox label{
+    color: #899EEA;
+    font-size:1.2vw;
+    font-weight: bold;
+}
+/*.ps_hidebox label{
+    padding:3px 6px;
+    color:#FFF;
+    background-color: #5060BA;
+    border-radius:5px;
+    font-size:1.2vw;
+    font-weight: bold;
+}*/
+.ps_hidebox label:hover{
+    color:rgb(54, 71, 168);
+    /*background-color: rgb(61, 78, 172);*/
+}
+.ps_hidebox input {
+    display: none; /* チェックボックス非表示 */
+}
+
+
+.content {
+    display:none;
+    font-size:1.1vw;
+    font-weight: bold; /* 文字の太さ */
+    overflow: hidden;
+    opacity: 0;        /* 文字を非表示 */
+    transition: 2s;  /* 文字が表示・非表示される時のスピード */
+}
+
+.ps_hidebox input:checked ~ .content {
+    display:block;
+    height: auto;
+    opacity: 1; /* 文字を表示 */
+}
+
+
+.content_now {
+    font-size:1.1vw;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 750px) {
+    .ps_s_title_checkbox{
+        float:left;
+        margin-right:10px;
+        width:25px;
+    }
+    /*日付とタイトル*/
+    .ps_s_title_sents{
+        float:left;
+    }
+    .ps_s_title_date{
+        margin:0;
+        padding:0px;
+        font-size:15px;
+        font-weight: medium;
+        /*background-color: #Faa;/*確認用*/
+    }
+    .ps_s_title_cont{
+        margin:0;
+        font-size:20px;
+        font-weight: bold;
+        /*background-color: #Faa;/*確認用*/
+    }
+    
+
+    .progress_status{
+        text-align: center;
+        margin:20px auto;
+        padding-top:5px;
+        border-radius: 10px;
+        width:90%;
+        color: #4E4E4E;
+        background-color:#FFF;
+    }
+    .ps_s_cont_blank1{
+        display: none;
+    }
+    .mobile_none{
+        display: none;
+    }
+    .ps_hidebox{
+        width:100%;
+    }
+    /*「＋詳しく見る」*/
+    .ps_hidebox label{
+        display: block;
+        text-align: center;
+        width:100%;
+        color:#FFF;
+        background-color: rgb(101, 116, 199);
+        font-size:15px;
+    }
+    .ps_hidebox label:hover{
+        color:#FFF;
+        background-color: rgb(81, 98, 190);
+    }
+    .ps_hidebox label:focus{
+        background-color: rgb(81, 98, 190);
+    }
+
+    .content {
+        display:none;
+        font-size:13px;
+        font-weight: bold; /* 文字の太さ */
+        overflow: hidden;
+        opacity: 0;        /* 文字を非表示 */
+        transition: 2s;  /* 文字が表示・非表示される時のスピード */
+    }
+
+    .content_now {
+        font-size:14px;
+        font-weight: bold;
+    }
+}
+
+
+
+
+/*サイト作成の進捗*/
+#ps_create_site_progress{
+    text-align: center;
+    margin: 0 auto;
+    padding-top:15px;
+    padding-bottom:15px;
+    width:80%;
+    background-color: #E3E9FF;
+}
+#ps_csp_cont{
+    text-align: left;
+    margin:0 auto;
+    width:90%;
+}
+
+
+
+
+/**フィルタリング部分**/
+#page_btns{
+    text-align: center;
+}
+
+#page_btns button{
+    text-align: center;
+    padding:5px 0px;
+    border:none;
+    width:23%;
+    color:#FFF;
+    background-color: #5060BA;
+    font-weight:bold;
+}
+#page_btns button:hover{
+    background-color:rgb(61, 78, 172);
+}
+#page_btns button:focus{
+    outline:none;
+}
+
+#page_btns p{
+    margin:0px;
+    font-size:1vw;
+    font-weight:medium;
+}
+
+/*ul*/
+#page_des{
+    text-align: center;
+    padding:0px;
+}
+
+#page_des li{
+    list-style-type:none;
+    display: none;
+}
+
+.page_des_title{
+    text-align: left;
+    margin:0px;
+    font-size:1.2vw;
+    font-weight:bold;
+}
+.page_des_title p{
+    margin:0px;
+}
+.pdt_pagename{
+    color:#5060BA;
+    font-size:15px;
+}
+
+.page_des_img{
+    margin:0px;
+    width:100%;
+}
+
+
+@media screen and (max-width: 750px) {
+    .page_des_title{
+        text-align: left;
+        margin:0px;
+        font-weight:bold;
+    }
+    .pdt_pagename{
+        color:#5060BA;
+        font-size:15px;
+    }
+}
